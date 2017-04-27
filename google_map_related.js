@@ -8,16 +8,16 @@ document.getElementById("LouisvilleKY").addEventListener("click", function() {
 
 function googleMapChange(inputParam)
 {
+  // Get google iframe first
+  var googleMap_iframe = document.getElementById('goolemapiframe');
+
+  // Change src of google iframe
   if(inputParam == 'LEXKY')
   {
-    console.log("LEXINGTON KY");
-    document.getElementById("KY_Lexington").style.display = 'block';
-    document.getElementById("KY_Louisville").style.display = 'none';
+    googleMap_iframe.src = "https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8";
   }
   else if(inputParam == 'LOUKY')
   {
-    console.log("LOUISVILLE KY");
-    document.getElementById("KY_Lexington").style.display = 'none';
-    document.getElementById("KY_Louisville").style.display = 'block';
+    googleMap_iframe.src = "https://www.google.com/maps/d/u/0/embed?mid=1p0YKhBNY-DzVSqy2PFc-_nh4WQ8";
   }
 }
