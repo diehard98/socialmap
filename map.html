@@ -6,14 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="custom_google_map.css" type="text/css">
   <script>
-    $(function() {
-      $('.changesrc').click(function() {
-        $('.google-maps').hide();
-        var number = $(this).attr('value');
-        $('#div' + number).show();
-        alert('Button ' + number + ' was clicked!');        
-      });
-    });
+    function changeGoogleMap()
+    {
+      
+    }
   </script>
 </head>
 
@@ -35,7 +31,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group"> <input type="submit" class="btn btn-info" value="Lexington"> <a href="#" class="btn btn-outline-primary" value="2">Louisville<br></a> </div>
+          <div class="btn-group"> <input type="submit" class="btn-outline-primary" value="Lexington"> <input type="submit" class="btn btn-primary" value="Louisville"> </div>
         </div>
       </div>
     </div>
@@ -45,13 +41,13 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <!-- Lexington KY -->
-          <div class="google-maps" id="LexingtonKY"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8" width="1024" height="768" style="border:0"></iframe> </div>
+          <div class="google-maps" id="KY_Lexington"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8" width="1024" height="768" style="border:0"></iframe> </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <!-- Louisville KY -->
-          <div class="google-maps" id="LouisvilleKY"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1p0YKhBNY-DzVSqy2PFc-_nh4WQ8" width="1024" height="768" style="border:0"></iframe></div>
+          <div class="google-maps" id="KY_Louisville"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1p0YKhBNY-DzVSqy2PFc-_nh4WQ8" width="1024" height="768" style="border:0"></iframe></div>
         </div>
       </div>
     </div>
