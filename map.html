@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group"> <button class="btn btn-outline-primary" value="Lexington" id="LexingtonKY" onclick="myFunction()"> Lexington </button><input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
+          <div class="btn-group"> <button class="btn btn-outline-primary" value="Lexington" id="LexingtonKY"> Lexington </button><input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
         </div>
       </div>
     </div>
@@ -46,14 +46,10 @@
     </div>
   </div>
   <script>
-    function myFunction() {
-      console.log("myfunction called");
-    	alert("I am an alert box!");
-		}
-    //document.getElementById("LexingtonKY").addEventListener("click", function() { changeGoogleMap("LexingtonKY"); }, false);
+    document.getElementById("LexingtonKY").addEventListener("click", function() { changeGoogleMap("LexingtonKY"); }, false);
     function changeGoogleMap(inputName)
     {
-      alert(inputName);
+      console.log(inputName);
     }
   </script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
