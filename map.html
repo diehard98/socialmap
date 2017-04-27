@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group"> <button class="btn btn-outline-primary" value="Lexington" id="LexingtonKY"> Lexington </button><input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
+          <div class="btn-group"> <button value="Lexington" id="LexingtonKY" class="btn btn-outline-primary" type="button" onclick="testfunction();"> Lexington </button><input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
         </div>
       </div>
     </div>
@@ -46,9 +46,12 @@
     </div>
   </div>
   <script>
-    document.getElementById("LexingtonKY").addEventListener("click", function() { 
-      document.getElementById("KY_Lexington").style.display = 'block'; 
-    });
+    function testfunction(){
+      console.log("TEST");
+    }
+    //document.getElementById("LexingtonKY").addEventListener("click", function() { 
+   //   document.getElementById("KY_Lexington").style.display = 'block'; 
+   // });
   </script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
