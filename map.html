@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="custom_google_map.css" type="text/css">
   <script>
-    alert("HI");
+    function myFunction() {
+    	alert("I am an alert box!");
+		}
     document.getElementById("LexingtonKY").addEventListener("click", function() { changeGoogleMap("LexingtonKY"); }, false);
     function changeGoogleMap(inputName)
     {
@@ -33,7 +35,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="btn-group"> <input type="button" class="btn btn-outline-primary" value="Lexington" id="LexingtonKY"> <input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
+          <div class="btn-group"> <input type="button" class="btn btn-outline-primary" value="Lexington" id="LexingtonKY" onclick="myFunction()"> <input type="submit" class="btn btn-outline-primary" value="Louisville"> </div>
         </div>
       </div>
     </div>
