@@ -162,7 +162,7 @@ body > * {
         padding-bottom: 75%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
-    		display: none;
+    		display: block;
     }
     .google-maps iframe {
         position: absolute;
