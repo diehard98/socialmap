@@ -6012,7 +6012,8 @@ body > * {
     position: relative;
     padding-bottom: 75%;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
   body > * .google-maps iframe {
     position: absolute;
     top: 0;
