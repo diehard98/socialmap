@@ -4,7 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="custom_google_map.css" type="text/css"> </head>
+  <link rel="stylesheet" href="custom_google_map.css" type="text/css">
+  <script>
+    function changeGoogleMap(targetCityName){
+      if(targetCityName == "Lexington_KY")
+      {
+        document.getElementById('map_id').src = "https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8";
+      }
+      else if(targetCityName == "Louisville_KY")
+      {
+        document.getElementById('map_id').src = "https://www.google.com/maps/d/u/0/embed?mid=1p0YKhBNY-DzVSqy2PFc-_nh4WQ8";
+      }
+    }
+  </script>
+</head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-faded">
@@ -24,10 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <ul class="breadcrumb m-1">
-            <li class="breadcrumb-item"> <a href="#">Lexington</a> </li>
-            <li class="breadcrumb-item"> <a href="#">Louisville</a> </li>
-          </ul>
+          <div class="btn-group"> <a href="#" class="btn btn-outline-primary" onclick="changeGoogleMap('Lexington_KY')">Lexington</a> <a href="#" class="btn btn-outline-primary" onclick="changeGoogleMap('Louisville_KY')">Louisville<br></a> </div>
         </div>
       </div>
     </div>
@@ -36,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <div class="google-maps"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8" width="1024" height="768" style="border:0"></iframe> </div>
+          <div class="google-maps" id="map_id"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=121X_RaowULLQdA8ySvHQuDG5Tp8" width="1024" height="768" style="border:0"></iframe> </div>
         </div>
       </div>
     </div>
