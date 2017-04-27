@@ -6013,7 +6013,7 @@ body > * {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
-    display: block; }
+    display: none; }
   body > * .google-maps iframe {
     position: absolute;
     top: 0;
